@@ -7,7 +7,7 @@ public class Item {
     private String name;
     private int price;
     private int stock;
-    private int categoryId;
+    private Category category;
     private LocalDateTime deletedAt;
 
     public int getId() {
@@ -34,11 +34,11 @@ public class Item {
     public void setStock(int stock) {
         this.stock = stock;
     }
-    public int getCategoryId() {
-        return categoryId;
+    public Category getCategory() {
+        return category;
     }
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Category category) {
+        this.category = category;
     }
     public LocalDateTime getDeletedAt() {
         return deletedAt;
